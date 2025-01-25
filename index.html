@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Agency</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-button: #121729;
+            --color-bluish: #f7f8fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <img src="./assets/tailgrid.svg" alt="logo svg" class="w-48 h-50 md:ml-10 md:mt-[-60px]">
+        <nav class="">
+            <ul class="hidden md:flex gap-12 absoute md:ml-[309px] md:mt-[-105px] font-bold text-gray-500">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <button class="md:w-38 h-12 bg-button dark:text-white absolute md:right-12 md:top-5 rounded-lg text-lg font-normal shadow-md">Get Started</button>
+    </header>
+    <!-- body -->
+     <main>
+        <section class="md:mt-40 md:ml-3">
+            <h1 class="text-4xl font-bold flex md:ml-3">Build beautiful website with <br> TailGrids blocks.</h1>
+            <p class="pt-3 ml-3 text-gray-500 leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam <br> at egestas tortor. Morbi sed odio id purus pellentesque iaculis <br> nulla facilisi.
+            </p>
+            <div class="">
+                <p class="ml-3 pt-3 ">Subscribe to get notified when we launch 🎉 </p>
+                <input type="text" placeholder="    Your Work Mail" class="border md:border-blue-600 md:w-80 md:h-12 rounded-lg mt-3 ml-2" required>
+                <button class="md:w-30 h-14 ml-3 bg-blue-600 rounded-lg text-white font-normal text-xl border-none shadow-lg">Notify me!</button>
+            </div>
+            <img src="./assets/image-1.jpg" alt="" class="absolute right-90 top-30 shadow-xl rounded-lg">
+            <img src="./assets/image-2.jpg" alt="" class="absolute right-20 top-30 shadow-xl rounded-lg">
+            <img src="./assets/image-3.jpg" alt="" class="absolute right-20 top-[355px] shadow-xl rounded-lg">
+        </section>
+     </main>
+     <main class="flex w-full bg-red-600 absolute p-8 md:mt-58">
+        <section class="">
+            <h2>Tailwind CSS UI Components for Modern Web Apps</h2>
+            <p>GrayGrids</p>
+            <p>Lineicons</p>
+            <p>Ayro Ui</p>
+        </section>
+     </main>
+</body>
+</html>
