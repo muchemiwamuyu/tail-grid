@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/f53e04fcb4.js" crossorigin="anonymous"></script>
     <title>Agency</title>
     <style type="text/tailwindcss">
         @theme {
             --color-button: #121729;
             --color-bluish: #f7f8fa;
+            --color-span: #4f00fa;
         }
     </style>
 </head>
+
 <body>
     <!-- header -->
     <header>
@@ -24,25 +28,31 @@
                 <li><a href="#">Support</a></li>
             </ul>
         </nav>
-        <button class="md:w-38 h-12 bg-button dark:text-white absolute md:right-12 md:top-5 rounded-lg text-lg font-normal shadow-md">Get Started</button>
+        <button
+            class="md:w-38 h-12 bg-button dark:text-white absolute md:right-12 md:top-5 rounded-lg text-lg font-normal shadow-md">Get
+            Started</button>
     </header>
     <!-- body -->
-     <main>
+    <main>
         <section class="md:mt-40 md:ml-3">
             <h1 class="text-4xl font-bold flex md:ml-3">Build beautiful website with <br> TailGrids blocks.</h1>
-            <p class="pt-3 ml-3 text-gray-500 leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam <br> at egestas tortor. Morbi sed odio id purus pellentesque iaculis <br> nulla facilisi.
+            <p class="pt-3 ml-3 text-gray-500 leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam <br> at egestas tortor. Morbi sed odio id purus pellentesque iaculis <br> nulla facilisi.
             </p>
             <div class="">
                 <p class="ml-3 pt-3 ">Subscribe to get notified when we launch 🎉 </p>
-                <input type="text" placeholder="    Your Work Mail" class="border md:border-blue-600 md:w-80 md:h-12 rounded-lg mt-3 ml-2" required>
-                <button class="md:w-30 h-14 ml-3 bg-blue-600 rounded-lg text-white font-normal text-xl border-none shadow-lg">Notify me!</button>
+                <input type="text" placeholder="    Your Work Mail"
+                    class="border md:border-blue-600 md:w-80 md:h-12 rounded-lg mt-3 ml-2" required>
+                <button
+                    class="md:w-30 h-14 ml-3 bg-blue-600 rounded-lg text-white font-normal text-xl border-none shadow-lg">Notify
+                    me!</button>
             </div>
             <img src="./assets/image-1.jpg" alt="" class="absolute right-90 top-30 shadow-xl rounded-lg">
             <img src="./assets/image-2.jpg" alt="" class="absolute right-20 top-30 shadow-xl rounded-lg">
             <img src="./assets/image-3.jpg" alt="" class="absolute right-20 top-[355px] shadow-xl rounded-lg">
         </section>
-     </main>
-     <main class="flex md:w-full bg-bluish relative p-8 md:mt-58 md:h-64">
+    </main>
+    <main class="flex md:w-full bg-bluish relative p-8 md:mt-58 md:h-60">
         <section class="flex items-center">
             <h2 class="text-2xl text-[--button] font-bold">Tailwind CSS UI Components <br> for Modern Web Apps</h2>
             <div class="md:w-[800px] flex justify-between items-center md:ml-28">
@@ -51,6 +61,69 @@
                 <img src="./assets/ayroui.svg" alt="ayroui logo">
             </div>
         </section>
-     </main>
+    </main>
+    <main class="mt-12 flex justify-center ">
+        <section class="container grid grid-cols grid-cols-4 ml-16">
+            <div class="container w-70 h-60 p-4">
+                <div class="icon w-28 h-28 bg-blue-600 mx-auto flex justify-center items-center rounded-lg">
+                    <i class="fa-regular fa-face-smile text-white text-6xl"></i>
+                </div>
+                <h2 class="text-center text-[--button] font-bold text-xl">Easy To Use</h2>
+                <p class="text-center pt-3">Lorem ipsum dolor sit amet sitim consectetur elit. Vestibulum tincidunt rutrum.</p>
+            </div>
+            <div class="line w-42 border-t-3 border-dashed absolute left-[290px] mt-18 border-blue-600"></div>
+            <div class="container w-70 h-60 p-4 m-4 m-4">
+                <div class="icon w-28 h-28 bg-blue-600 mx-auto flex justify-center items-center rounded-lg">
+                    <i class="fa-solid fa-paint-roller text-white text-6xl"></i>
+                </div>
+                <h2 class="text-center text-[--button] font-bold text-xl">Awesome Design</h2>
+                <p class="text-center pt-3">Lorem ipsum dolor sit amet sitim consectetur elit. Vestibulum tincidunt rutrum.</p>
+            </div>
+            <div class="line w-42 border-t-3 border-dashed absolute left-[610px] mt-18 border-blue-600"></div>
+            <div class="container w-70 h-60 p-4 m-4">
+                <div class="icon w-28 h-28 bg-blue-600 mx-auto flex justify-center items-center rounded-lg">
+                    <img src="./assets/menu.png" alt="menu icon" class="w-20 h-20">
+                </div>
+                <h2 class="text-center text-[--button] font-bold text-xl">Easy To Customize</h2>
+                <p class="text-center pt-3">Lorem ipsum dolor sit amet sitim consectetur elit. Vestibulum tincidunt rutrum.</p>
+            </div>
+            <div class="line w-42 border-t-3 border-dashed absolute left-[935px] mt-18 border-blue-600"></div>
+            <div class="container w-70 h-60 p-4 m-4">
+                <div class="icon w-28 h-28 bg-blue-600 mx-auto flex justify-center items-center rounded-lg">
+                    <i class="fa-regular fa-message text-6xl text-white"></i>
+                </div>
+                <h2 class="text-center text-[--button] font-bold text-xl">Any Time Support</h2>
+                <p class="text-center pt-3">Lorem ipsum dolor sit amet sitim consectetur elit. Vestibulum tincidunt rutrum.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section>
+            <img src="./assets/image4.jpg" alt="lady smiliing" class="rounded-tl-lg ml-30 mt-16 shadow-lg">
+            <div class="container w-80 h-34 bg-blue-700 absolute left-88 mt-[-136px] rounded-tr-[80px] flex items-center justify-center">
+                <p class="flex text-2xl text-white font-bold">We make clean & <br> professional design</p>
+            </div>
+        </section>
+        <section class="absolute right-18 w-[580px] h-[400px] mt-[-560px]">
+            <div class="container m-4 p-6">
+                <p class="text-gray-400 text-lg font-bold">What we do!</p>
+                <h2 class="text-5xl font-bold pt-2">We develop & create <br> awesome website .</h2>
+            </div>
+            <div class="container flex w-[500px] h-40 ml-15">
+                <span class="mt-1 text-2xl font-extrabold text-span">01</span>
+                <p class="absolute flex ml-10 text-3xl font-bold">Refreshing Design</p>
+                <p class="mt-10 ml-5 text-gray-500">Clean, refreshing and high-quality that gives positive vibes. Figma source file also provided so you can use to prototype, experiment, play or adjust.</p>
+            </div>
+            <div class="container flex w-[500px] h-40 ml-15">
+                <span class="mt-1 text-2xl font-extrabold text-span">02</span>
+                <p class="absolute flex ml-10 text-3xl font-bold">Developer Friendly</p>
+                <p class="mt-10 ml-5 text-gray-500">Developer experience is our #1 priority, entire library is designed, coded, and organized in a way that saves hundreds of hours and increases productivity.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        
+    </main>
 </body>
-</html> 
+
+</html>
